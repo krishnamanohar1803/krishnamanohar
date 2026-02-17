@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Headings Example</title>
+</head>
+<body>
+  <h1>Main Title</h1>
+  <h2>Subtitle</h2>
+  <h3>Section Heading</h3>
+  <h4>Smaller Heading</h4>
+  <h5>Even Smaller</h5>
+  <h6>Tiny Heading</h6>
+
+  <p>This is a paragraph of text.</p>
+  <p>Here is another paragraph.</p>
+</body>
+</html>

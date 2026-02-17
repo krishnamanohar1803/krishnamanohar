@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Button Action</title>
+  <script>
+    function sayHello() {
+      alert("Button clicked!");
+    }
+  </script>
+</head>
+<body>
+  <button onclick="sayHello()">Click Me</button>
+</body>
+</html>

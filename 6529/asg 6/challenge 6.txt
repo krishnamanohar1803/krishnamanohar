@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Example</title>
+  <!-- External CSS preferred -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Internal CSS */
+    h1 { color: blue; }
+  </style>
+</head>
+<body>
+  <h1 style="color:red;">Inline CSS Heading</h1>
+  <p>This paragraph uses internal CSS.</p>
+</body>
+</html>

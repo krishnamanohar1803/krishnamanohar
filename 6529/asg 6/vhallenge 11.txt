@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Alert</title>
+</head>
+<body>
+  <script>
+    alert("Hello! This is your first JavaScript alert.");
+  </script>
+</body>
+</html>

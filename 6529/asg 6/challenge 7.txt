@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Colors Example</title>
+  <style>
+    body { background-color: lightyellow; }
+    h1 { color: darkgreen; }
+    p { color: navy; }
+  </style>
+</head>
+<body>
+  <h1>Colorful Heading</h1>
+  <p>This text has a different color.</p>
+</body>
+</html>

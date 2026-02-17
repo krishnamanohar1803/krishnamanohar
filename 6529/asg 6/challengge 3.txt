@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Links and Images</title>
+</head>
+<body>
+  <a href="https://www.google.com" target="_blank">Go to Google</a>
+  <br><br>
+  <img src="https://www.example.com/image.jpg" alt="Example Image" width="300">
+</body>
+</html>

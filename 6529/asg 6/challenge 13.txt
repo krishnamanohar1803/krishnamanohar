@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Change Text</title>
+  <script>
+    function changeText() {
+      document.getElementById("msg").innerText = "Text changed!";
+    }
+  </script>
+</head>
+<body>
+  <p id="msg">Original text</p>
+  <button onclick="changeText()">Change Text</button>
+</body>
+</html>
