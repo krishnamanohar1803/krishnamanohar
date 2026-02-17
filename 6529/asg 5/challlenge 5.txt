@@ -1,0 +1,8 @@
+arr = [10, 20, 4, 20, 15]
+first = second = float('-inf')
+for x in arr:
+    if x > first:
+        second, first = first, x
+    elif first > x > second:
+        second = x
+print("Second largest:", second)

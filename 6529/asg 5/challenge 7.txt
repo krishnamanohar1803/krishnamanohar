@@ -1,0 +1,8 @@
+def rotate(arr, k):
+    k %= len(arr)
+    arr[:] = arr[-k:] + arr[:-k]
+
+nums = [1,2,3,4,5]
+rotate(nums, 2)
+print(nums)  # [4,5,1,2,3]
+

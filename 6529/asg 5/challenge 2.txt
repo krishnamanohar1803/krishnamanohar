@@ -1,0 +1,4 @@
+sentence = "Python is easy"
+words = sentence.split()
+rev = [w[::-1] for w in words]
+print(" ".join(rev))
