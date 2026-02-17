@@ -1,0 +1,101 @@
+#include <stdio.h>
+#include <string.h>
+
+struct Account {
+    char name[50];
+    int accNo;
+    float balance;
+};
+
+// Function prototypes
+void createAccount(struct Account *acc, char name[], int accNo, float balance);
+void deposit(struct Account *acc, float amount);
+void withdraw(struct Account *acc, float amount);
+void checkBalance(struct Account *acc);
+void saveToFile(struct Account *acc);
+
+int main() {
+    struct Account acc;
+    int choice;
+    char name[50];
+    int accNo;
+    float amount;
+
+    printf("Enter account holder name: ");
+    scanf("%s", name);
+    printf("Enter account number: ");
+    scanf("%d", &accNo);
+
+    createAccount(&acc, name, accNo, 0.0);
+
+    do {
+        printf("\n--- Banking Menu ---\n");
+        printf("1. Deposit\n2. Withdraw\n3. Check Balance\n4. Save to File\n5. Exit\n");
+        printf("Enter choice: ");
+        scanf("%d", &choice);
+
+        switch(choice) {
+            case 1:
+                printf("Enter deposit amount: ");
+                scanf("%f", &amount);
+                deposit(&acc, amount);
+                break;
+            case 2:
+                printf("Enter withdraw amount: ");
+                scanf("%f", &amount);
+                withdraw(&acc, amount);
+                break;
+            case 3:
+                checkBalance(&acc);
+                break;
+            case 4:
+                saveToFile(&acc);
+                break;
+            case 5:
+                printf("Exiting...\n");
+                break;
+            default:
+                printf("Invalid choice!\n");
+        }
+    } while(choice != 5);
+
+    return 0;
+}
+
+// Function definitions
+void createAccount(struct Account *acc, char name[], int accNo, float balance) {
+    strcpy(acc->name, name);
+    acc->accNo = accNo;
+    acc->balance = balance;
+}
+
+void deposit(struct Account *acc, float amount) {
+    acc->balance += amount;
+    printf("Deposited %.2f successfully.\n", amount);
+}
+
+void withdraw(struct Account *acc, float amount) {
+    if (amount > acc->balance) {
+        printf("Insufficient balance!\n");
+    } else {
+        acc->balance -= amount;
+        printf("Withdrew %.2f successfully.\n", amount);
+    }
+}
+
+void checkBalance(struct Account *acc) {
+    printf("Account Holder: %s | Account No: %d | Balance: %.2f\n",
+           acc->name, acc->accNo, acc->balance);
+}
+
+void saveToFile(struct Account *acc) {
+    FILE *fp = fopen("bank.txt", "w");
+    if (fp == NULL) {
+        printf("Error opening file!\n");
+        return;
+    }
+    fprintf(fp, "Name: %s\nAccount No: %d\nBalance: %.2f\n",
+            acc->name, acc->accNo, acc->balance);
+    fclose(fp);
+    printf("Data saved to file.\n");
+}

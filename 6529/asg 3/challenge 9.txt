@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+// Function to add two numbers
+double add(double a, double b) {
+    return a + b;
+}
+
+// Function to subtract two numbers
+double subtract(double a, double b) {
+    return a - b;
+}
+
+// Function to multiply two numbers
+double multiply(double a, double b) {
+    return a * b;
+}
+
+// Function to divide two numbers (with error handling)
+double divide(double a, double b) {
+    if (b == 0) {
+        printf("Error: Division by zero!\n");
+        return 0; // Return 0 as a safe default
+    }
+    return a / b;
+}
+
+int main() {
+    double x = 10, y = 5;
+
+    printf("Add: %.2lf\n", add(x, y));
+    printf("Subtract: %.2lf\n", subtract(x, y));
+    printf("Multiply: %.2lf\n", multiply(x, y));
+    printf("Divide: %.2lf\n", divide(x, y));
+
+    return 0;
+}
