@@ -1,0 +1,12 @@
+import random
+from collections import Counter
+
+def roll_dice(num_dice):
+    rolls = [random.randint(1, 6) for _ in range(num_dice)]
+    print("Results:", rolls)
+    stats = Counter(rolls)
+    print("Statistics:", dict(stats))
+
+# Example usage
+num = int(input("How many dice to roll? "))
+roll_dice(num)

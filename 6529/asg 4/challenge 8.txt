@@ -1,0 +1,15 @@
+questions = [
+    {"q": "Capital of France?", "options": ["Paris", "Rome", "Berlin"], "answer": "Paris"},
+    {"q": "2+2?", "options": ["3", "4", "5"], "answer": "4"}
+]
+
+score = 0
+for q in questions:
+    print(q["q"])
+    for i, opt in enumerate(q["options"], 1):
+        print(f"{i}. {opt}")
+    choice = int(input("Your answer: "))
+    if q["options"][choice-1] == q["answer"]:
+        score += 1
+
+print("Final Score:", score, "/", len(questions))

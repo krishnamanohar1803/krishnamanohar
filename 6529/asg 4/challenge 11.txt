@@ -1,0 +1,19 @@
+class Account:
+    def __init__(self, acc_no, balance=0):
+        self.acc_no, self.balance = acc_no, balance
+
+    def deposit(self, amt): 
+        if amt > 0: self.balance += amt
+
+    def withdraw(self, amt): 
+        if 0 < amt <= self.balance: self.balance -= amt
+
+    def transfer(self, target, amt):
+        if 0 < amt <= self.balance:
+            self.withdraw(amt)
+            target.deposit(amt)
+
+# Example
+a1, a2 = Account("001", 500), Account("002", 300)
+a1.transfer(a2, 200)
+print(a1.balance, a2.balance)

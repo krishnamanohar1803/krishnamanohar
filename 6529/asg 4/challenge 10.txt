@@ -1,0 +1,11 @@
+import requests
+
+url = "https://api.github.com/users/octocat"
+try:
+    response = requests.get(url)
+    response.raise_for_status()
+    data = response.json()
+    print("User:", data["login"])
+    print("Followers:", data["followers"])
+except Exception as e:
+    print("Request failed:", e)

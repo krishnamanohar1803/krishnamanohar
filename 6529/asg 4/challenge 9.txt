@@ -1,0 +1,12 @@
+import requests
+from bs4 import BeautifulSoup
+
+url = "https://example.com"
+try:
+    response = requests.get(url)
+    response.raise_for_status()
+    soup = BeautifulSoup(response.text, "html.parser")
+    titles = [tag.text for tag in soup.find_all("h2")]
+    print("Titles:", titles)
+except Exception as e:
+    print("Error:", e)

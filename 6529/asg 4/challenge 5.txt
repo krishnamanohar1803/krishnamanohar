@@ -1,0 +1,17 @@
+import re
+
+def check_password(password):
+    if len(password) < 8:
+        return "Weak: Too short"
+    if not re.search(r"[A-Z]", password):
+        return "Weak: Add uppercase"
+    if not re.search(r"[a-z]", password):
+        return "Weak: Add lowercase"
+    if not re.search(r"[0-9]", password):
+        return "Weak: Add numbers"
+    if not re.search(r"[^A-Za-z0-9]", password):
+        return "Weak: Add symbols"
+    return "Strong password!"
+
+pwd = input("Enter a password: ")
+print(check_password(pwd))

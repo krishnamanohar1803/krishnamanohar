@@ -1,0 +1,29 @@
+tasks = []
+
+def show_menu():
+    print("\n1. Add Task\n2. Remove Task\n3. View Tasks\n4. Exit")
+
+def todo_list():
+    while True:
+        show_menu()
+        choice = input("Choose an option: ")
+
+        if choice == "1":
+            task = input("Enter task: ")
+            tasks.append(task)
+        elif choice == "2":
+            task = input("Enter task to remove: ")
+            if task in tasks:
+                tasks.remove(task)
+            else:
+                print("Task not found.")
+        elif choice == "3":
+            print("Tasks:")
+            for i, task in enumerate(tasks, 1):
+                print(f"{i}. {task}")
+        elif choice == "4":
+            break
+        else:
+            print("Invalid choice.")
+
+todo_list()

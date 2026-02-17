@@ -1,0 +1,37 @@
+import json
+import os
+
+FILE = "contacts.json"
+
+def load_contacts():
+    if os.path.exists(FILE):
+        with open(FILE, "r") as f:
+            return json.load(f)
+    return {}
+
+def save_contacts(contacts):
+    with open(FILE, "w") as f:
+        json.dump(contacts, f, indent=4)
+
+def add_contact(name, phone, email):
+    contacts = load_contacts()
+    contacts[name] = {"phone": phone, "email": email}
+    save_contacts(contacts)
+
+def search_contact(name):
+    contacts = load_contacts()
+    return contacts.get(name, "Not found")
+
+def delete_contact(name):
+    contacts = load_contacts()
+    if name in contacts:
+        del contacts[name]
+        save_contacts(contacts)
+        return "Deleted"
+    return "Not found"
+
+# Example usage
+add_contact("Alice", "12345", "alice@example.com")
+print(search_contact("Alice"))
+delete_contact("Alice")
+

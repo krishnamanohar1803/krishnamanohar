@@ -1,0 +1,11 @@
+import threading, time
+
+def task(name, dur):
+    print(f"{name} start")
+    time.sleep(dur)
+    print(f"{name} end")
+
+threads = [threading.Thread(target=task, args=(n,d)) for n,d in [("A",2),("B",3)]]
+[t.start() for t in threads]
+[t.join() for t in threads]
+print("All done")
