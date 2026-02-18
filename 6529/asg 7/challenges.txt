@@ -1,0 +1,273 @@
+1. Percentage
+
+Marks obtained = 360, Total = 600
+
+360/600 × 100=60%
+
+
+
+
+
+2. Simple Interest
+
+si=p*r*t/100
+
+=2000*5*2/100
+
+=200
+
+
+
+
+
+3. Average
+
+10+20+30+40+50/5
+
+=150/5
+
+=30
+
+
+
+
+
+4. Time and Work
+
+A can do full work in 10 days
+
+ → Half work in 5 days.
+
+
+
+
+
+5. Profit and Loss
+
+Profit = SP – CP
+
+= 650 – 500
+
+= ₹150
+
+
+
+
+
+6. Number Series
+
+2, 4, 6, 8, ? 
+
+→ Next = 10
+
+
+
+
+7. Alphabet Series
+
+A, C, E, G, ?
+
+ → Next = I (skipping one letter each time)
+
+
+
+
+8. Odd One Out
+
+Dog, Cat, Cow, Car
+
+ → Odd one = Car (others are animals)
+
+
+
+
+9. Direction Sense
+
+10 m east – 5 m west 
+
+= 5 m east from starting point.
+
+
+
+
+10. Coding–Decoding
+
+CAT → DBU (each letter +1)
+
+DOG → EPH
+
+
+
+
+11. Percentage & Ratio
+
+Ratio A:B = 3:5, B = 400
+
+𝐴/𝐵=3/5
+
+ → 𝐴=3/5×400
+
+=240
+
+
+
+
+
+
+12. Time and Work
+
+A = 20 days, B = 30 days
+
+Work/day = 1/20+1/30
+
+=3+2/60
+
+=5/60
+
+=1/12
+  
+Together → 12 days
+
+
+
+
+
+13. Time, Speed & Distance
+
+Speed = 60 km/h, Time = 2 h
+
+Distance = 60×2=120 km
+
+
+
+
+
+14. Profit and Loss
+
+SP = ₹1200, Profit = 20%
+
+CP = 𝑆𝑃/1.2= 1200/1.2
+
+=₹1000
+
+
+
+
+
+15. Average
+
+Average of 5 numbers = 30 → Sum = 150
+
+One number = 50 → Remaining sum = 100
+
+Average of 4 numbers = 100/4
+
+=25
+
+
+
+
+16. Number Series
+
+3, 6, 12, 24, ?
+
+ → Next = 48 (×2 each time)
+
+
+
+
+
+
+17. Alphabet Series
+
+B, E, H, K, ? 
+
+→ Next = N (skipping 2 letters each time)
+
+
+
+
+
+18. Coding–Decoding
+
+SCHOOL → TDIPPM (+1 each letter)
+
+COLLEGE → DPMMHFH
+
+
+
+
+
+19. Direction Sense
+
+10 m north
+
+ → 10 m east
+
+ → 10 m south
+
+Final position: 10 m east from start.
+
+
+
+
+
+20. Blood Relation
+
+“He is the son of my father’s only son.”
+
+Father’s only son = Ravi himself
+
+ → Photograph = Ravi’s son.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
